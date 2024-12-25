@@ -5,10 +5,11 @@ import Space from '../models/Space.jsx';
 import Sky  from "../models/Sky.jsx"
 import Bird from '../models/Bird.jsx';
 import Plane from './Plane.jsx';
-
+import HomeInfo from '../components/HomeInfo.jsx';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState();
+  const [currentStage, setCurrentStage] = useState(1);
 
   const adjustSpceForScreenSize = () => {
     let screenScale = null
@@ -20,32 +21,32 @@ const Home = () => {
       screenPosition = [0,-2.5, -22];
     }else{
       screenScale = [1.3,1.3,1.3];
-      screenPosition = [0,-1, -14];
+      screenPosition = [0,-2.3, -14];
     }
     return [screenScale,screenPosition,rotation];
   }
-  const adjustPlaneForScreenSize = () => {
-    let screenScale;
-    let screenPosition;
+  // const adjustPlaneForScreenSize = () => {
+  //   let screenScale;
+  //   let screenPosition;
 
-    if(window.innerWidth < 768){
-      screenScale = [1.5,1.5,1.5];
-      screenPosition = [0,-1.5, 0];
-    }else{
-      screenScale = [3,3,3];
-      screenPosition = [0,-4, -4];
-    }
-    return [screenScale,screenPosition];
-  }
+  //   if(window.innerWidth < 768){
+  //     screenScale = [1.5,1.5,1.5];
+  //     screenPosition = [0,-1.5, 0];
+  //   }else{
+  //     screenScale = [3,3,3];
+  //     screenPosition = [0,-4, -4];
+  //   }
+  //   return [screenScale,screenPosition];
+  // }
 
   const [spaceScale, spacePosition,spaceRotation] = adjustSpceForScreenSize();
-  const [planeScale, planePosition ] = adjustPlaneForScreenSize();
+  // const [planeScale, planePosition ] = adjustPlaneForScreenSize();
 
   return (
     <section className='w-full h-screen relative'>
-      {/* <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
-        popup
-      </div> */}
+      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+      {currentStage && <HomeInfo currentStage={currentStage} />}
+      </div>
 
       <Canvas  
         className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}

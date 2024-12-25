@@ -4,16 +4,19 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
    <header className='header'>
-        <NavLink to="/" className=' w-24 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md'>
+        <NavLink to="/" className=' w-24 h-9 rounded-lg bg-white items-center justify-center flex font-bold shadow-md'>
             <p className='bg-white text-black'>Home</p>
         </NavLink>
 
-        <nav className='flex text-lg gap-7 font-medium '>
-            <NavLink to="/about" className={( {isActive})=> isActive ? 'text-blue-500 w-24 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' : 'text-black w-24 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' }>
+        <nav className='flex text-lg gap-9 font-medium '>
+            <NavLink to="/about" className={( {isActive})=> isActive ? 'text-blue-500 w-24 h-8 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' : 'text-black w-24 h-9 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' }>
                 About
             </NavLink>
-            <NavLink to="/projects" className={( {isActive})=> isActive ? 'text-blue-500 w-24 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' : 'text-black w-24 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' }>
+            <NavLink to="/projects" className={( {isActive})=> isActive ? 'text-blue-500 w-24 h-8 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' : 'text-black w-24 h-9 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' }>
                 Projects
+            </NavLink>
+            <NavLink to="/contact" className={( {isActive})=> isActive ? 'text-blue-500 w-24 h-8 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' : 'text-black w-24 h-9 rounded-lg bg-white items-center justify-center flex font-bold shadow-md' }>
+                Contact
             </NavLink>
         </nav>
    </header>

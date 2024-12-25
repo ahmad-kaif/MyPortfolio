@@ -1,0 +1,33 @@
+.home-info-container {
+    text-align: center;
+    margin-top: -1%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #878686;
+    background: transparent; 
+  }
+  
+  .name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #afafaf; /* Subtle dark gray for better readability */
+    background: transparent;
+  }
+  
+  .typewriter {
+    font-size: 1.5rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: fit-content;
+    color: #494747; /* Matches the name color for consistency */
+    background: transparent; 
+    animation: blink 0.7s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
