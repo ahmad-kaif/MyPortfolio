@@ -7,14 +7,15 @@
   --blue-rgb: 237 245 255;
   --green-rgb: 125 161 35;
 }
+
 *{
   background: #000;
+  color: white;
 }
 
 body {
   font-family: "Work Sans", sans-serif;
   background: #000;
-  color: white;
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -27,7 +28,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply w-full mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -51,7 +52,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+    @apply text-white bg-gradient-to-r from-[#8d8d8d] to-[#2f0c67] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {
@@ -79,7 +80,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta-text {
-    @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-white font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
 
@@ -150,9 +151,9 @@ body:has(.card[data-color="green"]:hover) {
   position: absolute;
   inset: 0;
   z-index: 1;
-  width: inherit;
-  height: inherit;
-  background-color: #ffffff33;
+  width: 5rem;
+  height: 4em;
+  background-color: #ededed33;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: 250ms;

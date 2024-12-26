@@ -6,6 +6,7 @@ import Sky  from "../models/Sky.jsx"
 import Bird from '../models/Bird.jsx';
 import Plane from './Plane.jsx';
 import HomeInfo from '../components/HomeInfo.jsx';
+import CTA from '../components/CTA.jsx';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState();
@@ -44,7 +45,7 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
-      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+      <div className='absolute top-20 left-0 right-0 z-10 flex items-center justify-center'>
       {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
@@ -78,8 +79,6 @@ const Home = () => {
           </Suspense>
 
       </Canvas>
-
-    
     </section>
   )
 }
