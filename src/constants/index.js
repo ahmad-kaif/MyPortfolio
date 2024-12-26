@@ -1,4 +1,5 @@
-import { dps_logo, du_logo, nit_logo } from "../assets/images";
+import { dps_logo, du_logo, nit_logo, lc_logo, gfg_logo, github_logo, cf_logo, HR_logo } from "../assets/images";
+
 import {
     car,
     contact,
@@ -229,3 +230,31 @@ export const projects = [
         link: 'https://github.com/ahmad-kaif/news_laundry',
     }
 ];
+
+export const coding = [
+    {
+        platform: "Leetcode",
+        img: lc_logo,
+        url:"https://leetcode.com/u/_Ahmad/"
+    },
+    {
+        platform: "GeeksForGeeks",
+        img: gfg_logo,
+        url:"https://www.geeksforgeeks.org/user/hey_ahmad/"
+    },
+    {
+        platform: "HackerRank",
+        img: HR_logo ,
+        url:"https://www.hackerrank.com/profile/ahmadkaif190"
+    },
+    {
+        platform: "CodeForces",
+        img: cf_logo,
+        url:"https://codeforces.com/profile/Ahmad_Codes"
+    },
+    {
+        platform: "Github",
+        img: github_logo,
+        url:"https://github.com/ahmad-kaif"
+    },
+]

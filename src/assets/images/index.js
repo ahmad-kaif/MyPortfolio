@@ -7,6 +7,12 @@ import logo from './logo.svg'
 import dps_logo from './dps_logo.png'
 import nit_logo from "./nit_logo.png"
 import du_logo from "./du_logo.png"
+import HR_logo from "./HR_logo.png"
+import lc_logo from "./lc_logo.png"
+import gfg_logo from "./gfg_logo.jpg"
+import cf_logo from "./cf_logo.png"
+import github_logo from "./github_logo.png"
+
 
 export {
     dps_logo,
@@ -17,5 +23,10 @@ export {
     shopify,
     starbucks,
     tesla,
-    logo
+    logo,
+    HR_logo,
+    lc_logo,
+    gfg_logo,
+    cf_logo,
+    github_logo,
 }
